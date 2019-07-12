@@ -1,0 +1,50 @@
+:root {
+  --columnGap: 24px;
+}
+.Board {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+  padding: var(--columnGap);
+}
+
+.Columnz {
+  align-items: flex-start;
+  display: flex;
+  height: 100%;
+}
+
+.Column {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  width: 200px;
+}
+
+.Column:nth-child(n + 1) {
+  margin-left: 24px;
+}
+
+.Column__items {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.Item {
+  padding: 8px;
+}
+
+.AddButton {
+  align-items: center;
+  align-self: center;
+  background: #4eb34e;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  font-size: 1.2rem;
+  height: 24px;
+  justify-content: center;
+  width: 24px;
+}
